@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script type="module">
+    import dayjs from 'https://unpkg.com/dayjs@1.11.10/esm/index.js';
+    import isS from './15practice.js'
+
+    let date = dayjs()
+    let date2 = date.add(4, 'days')
+    console.log(date2.format('MMMM, D, dddd'))
+    console.log(isS(date2))
+
+
+  </script>
+</body>
+
+</html>

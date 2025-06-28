@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>
+    DOM
+
+  </title>
+
+<BODY>
+  <button>
+    hello
+  </button>
+  <button class="js-button">
+    second button
+  </button>
+</BODY>
+
+<script>
+
+
+  console.log(document.querySelector('button')//let us get any element in the page and put it inside our js
+    .innerHTML);
+  document.querySelector('button')
+    .innerHTML = 'lolo'
+  const buttonElement = document.querySelector('.js-button');
+  console.log(buttonElement);
+
+
+  /*
+  console.log (document.title);
+  document.title='changed';
+  console.log(document.body);
+
+  console.log(document.body.innerHTML);
+  document.body.innerHTML ='<button>Good job</button>';
+  */
+
+
+
+
+
+
+  /*
+ document.body.innerHTML='hello';
+ document.title='good job';
+ */
+
+  //when naming a variable when using DOM put Element at the end
+  //document.innerText gets the html text without spaces
+</script>
+
+
+</body>
+
+</html>

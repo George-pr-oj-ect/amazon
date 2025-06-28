@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>advanced functions</title>
+</head>
+
+<body>
+  <button onclick="" class="js-button">click Me</button>
+
+
+
+  <script>
+    /*
+    const buttonElement = document.querySelector('.js-button');
+    //add event listener has to parameters 1. the event 2.function we want to run
+    //it allows us to add more events to one event listener
+    //we can remove an event listener
+
+    const eventListener = () => {
+      console.log('hello')
+    }
+    buttonElement.addEventListener('click', eventListener
+    );
+
+    buttonElement.removeEventListener('click', eventListener);
+    buttonElement.addEventListener('click', () => {
+      console.log('hello2')
+    });
+
+
+
+
+
+    /*
+    function greeting() {
+      console.log("Hello, World!");
+    }
+    greeting()
+
+    const num = 2;
+
+    const function1 = function () {//anonymous function
+      console.log("Hello, World!2");
+    }
+    console.log(function1)
+
+    function1()
+
+
+    const object1 = {
+      num: 2,
+      fun: function () {
+        console.log('hello3')
+      }
+    }
+    object1.fun()
+
+    function display(param) {
+      console.log(param)
+    }
+    display(2)
+
+
+    function run(param) {
+      param()
+
+    }
+    run(function () {
+      console.log('hello4')
+    })
+      */
+    //allows us to run a function in the future
+    //takes 2 parameters a function we want to run in the future
+    //second is how long to wait before running the function
+    /*setTimeout(function () {
+      console.log('time out')
+    }, 2000);
+    console.log('next line')
+
+
+    setInterval(function () {
+      console.log('set interval')
+    },10000)
+
+    console.log('next line2')
+  
+    // another way to loop through an array
+    [
+      'make dinner',
+      'wash dishes',
+      'watch youtube'
+    ].forEach((value, index) => {
+      console.log(value)
+
+    })
+    //forEach is a method of the array object
+    //we use.forEach() method
+    // it loops through the array and saves the values into the parameter value
+
+    const regularFunction = function (param) {
+      console.log('hello')
+      return 132
+    }
+
+    const arrowFunction = (param) => {
+      console.log('hello')
+      return 132
+    };
+    // arrow functions are a shorter way to write functions
+    // when passing a function into another function it is better to use arrow functions
+
+
+    arrowFunction()
+    regularFunction()
+
+    //bracket function properties
+
+    const oneParam = param => { //when it has one parameter the round brackets are optional
+      console.log(param + 1)
+    }
+    oneParam(2);
+
+
+    const oneLine = () => 2 + 3; // a one line arrow function does not need a return or the curly brackets
+
+    console.log(oneLine())
+
+
+    //using them inside an object
+
+    const object2 = {
+      method: () => {
+
+      },
+      method() {
+
+      }
+    }
+      */
+
+
+    // ARRAY METHODS
+    //filter ()
+
+    console.log([1, -3, 5].filter((value, index) => {
+      /*if (value < 0) {
+        return false
+      } else {
+        return true
+      }*/
+      return value >= 0
+    }))
+    //if inner function returns true it will put the value in the new array if false it does not
+
+
+    //MAP 
+    // we wanna make a copy with each number doubled
+    console.log([1, 1, 3].map((value, index) => {
+      return value * 80
+
+    }))
+    //creates a new array whatever we return will be added to the new array
+
+    // closure- if a function has access to a value it will always have access to that value
+
+  </script>
+</body>
+
+</html>

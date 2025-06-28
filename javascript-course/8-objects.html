@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>objects</title>
+
+  <script>
+    /*
+  
+const product= {
+  name:'socks',
+  price: 1090
+};
+alert (product);
+alert(product.name);
+alert(product.price);
+*/
+    /*
+                const product2={
+                  name:'shirt',
+                 [ 'delivery-time' ]:'10:40 am',
+                 rating:{
+                  stars:4.5,
+                  count:87
+                 },
+                 fun: function function1(){
+                  console.log('function inside object');
+                 }
+                };
+                console.log(product2.name);
+                console.log(product2['name']);
+                console.log(product2['delivery-time'])
+                console.log(product2.rating.count);
+    
+    
+                product2.fun();
+      
+                console.log(JSON.stringify(product2));
+                 const jsonstring= JSON.stringify(product2);
+    
+                console.log(JSON.parse(jsonstring));
+    */
+
+
+    //when coping you are not coping the object but rather the reference they are actually pointing to the same object in the memory
+
+
+
+    console.log('hello'.length);
+    console.log('hello'.toUpperCase());
+
+
+    const object1 = {
+      message: 'hello'
+    };
+    console.log(object1);
+    const object2 = object1;
+
+    object1.message = 'good job';
+    console.log(object1);
+    console.log(object2);
+
+
+
+    const object3 = {
+      message: 'good job'
+    };
+
+    console.log(object3 === object1);
+    console.log(object2 === object1);
+
+
+
+    const object4 = {
+      message: 'good job',
+      price: 200
+    };
+
+    //const message=object4.message;
+    const { message, price } = object4;
+    console.log(message);
+    console.log(price);
+
+
+    const object5 = {
+      // message: message
+      message,
+      // method:function function1(){
+      //   console.log('method');
+      //}
+      method() {
+        console.log('method');
+      }
+    };
+    console.log(object5);
+    object5.method();
+
+  </script>
+
+
+  </body>
+
+</html>

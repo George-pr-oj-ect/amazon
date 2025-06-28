@@ -1,0 +1,148 @@
+WHEN CREATING WEBSITES WITH JS
+1. SAVE THE DATA
+2. USE THE DATA TO GENERATE HTML
+3. MAKE WEBSITE INTERACTIVE
+
+
+a data structure is when after saving the html data into javascript
+it organizes the data and rep a list of products
+
+accumulator pattern is when we loop through an array and each time we are adding to the result
+
+a data attribute allows us to attach any information to an element and it also enables us to delete or select a specific object we want to remove or add
+
+data set gives us all the data attributes attached to a a button
+
+CREATING A Cart 
+first we attach product name to the button using the data attribute
+second when we click the button we get the product id out
+and then add product to cart
+
+creating a module 
+1. create a file
+2.don't load the file with the script tag
+3.add type="module"attribute
+4.Export
+5.import
+
+
+normalizing the data - saving the id of product we want and the rest of the data will be accessible so there is no need of re-writing the entire object
+
+external libraries are codes outside our project
+to find external libraries we can search 'javascript then what kind of library you are looking for'
+
+recursion-when a function reruns all its code again
+
+MVC(model view controller) split code into three parts
+1. model (all the code that saves and manages the data)
+2.view (code that takes the data and displays it on the page)generating html
+3. controller(runs code when we interact with the code)
+
+they interact with each other with a loop
+
+Testing
+one way of testing is to open the website and try out whether your function is working based on what its supposed to do- manual testing 
+(hard to test every situation
+hard to retest the code)
+
+Automated testing using code to test code
+testing two situations is testing 2 test cases
+
+types of test cases
+1. basic test cases-tests if code is working or not
+2. edge cases-test the code with values that are tricky
+
+a group of related tests is called a test suite
+
+a testing framework is a library that helps us write and run tests easier
+
+a flaky test is a test that sometimes passes and sometimes fails
+
+unit tests test one function at a time
+integration test test many pieces of code working together
+
+hooks lets us run some code for each test
+
+procedural programming is just functions that do things and following code step by step
+
+OOP
+is another way of writing code
+organizing our code into objects
+
+a function inside an object is called a method
+this keyword is used to refer to the object that the method is a part of
+and it also solves the problem of when the object name is changed
+
+in oop use pascal case start every word with a capital
+a class is an object generator
+(just a function that generates the object but with a diff syntax)
+an instance is an object generated from a class
+
+a constructor lets us run some code  when we generate an object it will run the constructor automatically 
+the method has to be named constructor
+you should not return anything from the constructor
+
+in classes making a property private means it can only be accessed inside the class
+a public property can be accessed from anywhere in the code
+
+converting an object into a class is basically taking an object and put it inside a class and we copy over the properties
+
+inheritance lets us reuse code in between classes
+it allows one class to get the different properties and methods from another class
+(when we have a product and then we have a more specific type of product)
+ a discriminator property tells us which product we should convert it to
+
+ super gives us access to the parent class
+ polymorphism where we can use a method without actually knowing the class
+
+ if we are inside a method and ude this it will point to the object if we are outside it will return undefined
+
+ inside a method this points to the outer object
+ inside a function this = undefined - we can change it using .call
+ arrow functions do not change the value of this
+
+Backend
+ a backend is a computer that manages the data of a website
+ when we send messages to the backend it is called a request 
+ when it receives a request it will send back a response
+ this is called a request-response cycle
+ xhr.send() is asynchronous code which means it does not wait for a line of code to finish it sends and then immediately goes to the next line
+
+ a status code is the code returned when we get a respond from the backend- if it starts with 4 or 5 = response failed
+ 4-our problem
+ 5-the backend problem
+ a 2- means it was successful
+
+a list of all URL paths that are supported is called the backend API 
+the backend can respond with text,
+
+a callback is a function which is set to run in the future
+promises- a better way to handle asynchronous code
+they are similar to done() function in jasmine
+resolve lets us control when to go to the next step
+resolve is saved in a parameter in the next step
+.then adds a next step after resolve is run
+promise.All() lets us run multiple promises at the same time when we give it ann array of promises it will run all of them at the same time before going to the next step 
+
+fetch()-is a better way to make http request
+
+Async Await is an even better way to handle asynchronous code
+it is a shortcut for promises
+it makes a function return a promise
+ await lets us wait for a promise to finish before going to next line
+
+ ERROR HANDLING
+
+ we use.catch()
+ we use try catch in synchronous code too
+ we use it in async await
+ we only use it in code outside our control
+ throw creates a new error tht we will  catch later
+ reject() is a function that lets us create an error in the future
+
+ header gives the backend more info about our request
+
+ URL parameter let us save data directly in the URL
+
+ next learn nodeJs(lets us create our own backend)
+ learn how to put a website on the internet

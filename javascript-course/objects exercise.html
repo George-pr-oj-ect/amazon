@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Calculator</title>
+</head>
+
+<body>
+  <p>
+
+    <button onclick="updateCalculation('1');
+      console.log(updateCalculation)" ;>1</button>
+
+    <button onclick="updateCalculation('2');
+      console.log(updateCalculation);">2</button>
+  </p>
+
+
+  <p><button onclick="updateCalculation('3');
+      console.log(updateCalculation);">3</button></p>
+
+  <p><button onclick="updateCalculation(' + ')
+console.log(updateCalculation);
+">+</button>
+
+    <button onclick="
+    calculation=eval(calculation);
+    console.log(calculation);
+    ">=</button>
+  </p>
+
+
+
+
+
+  <script>
+    let calculation = localStorage.getItem('calculation') || '';
+    function updateCalculation(value) {
+      calculation += value;
+      console.log(calculation);
+      localStorage.setItem('calculation', calculation);
+    }
+  </script>
+</body>
+
+
+
+<body>
+  <button onclick="
+playGame('heads');
+">heads</button>
+
+  <button onclick="
+playGame('tails');
+">tails</button>
+
+  <script>
+    /*
+    let score = JSON.parse(localStorage.getItem('score')) || {
+      wins: 0,
+    losses: 0
+};
+
+    function playGame(guess) {
+const randomNumber = Math.random();
+    const result = randomNumber < 0.5 ? 'heads' : 'tails';
+
+    console.log(guess === result ? 'You win!' : 'You lose!');
+
+    if (guess === result) {
+      score.wins++;
+} else {
+      score.losses++;
+}
+    console.log(score);
+    localStorage.setItem('score', JSON.stringify(score));
+}
+
+  </script>
+</body>
+
+</html>
